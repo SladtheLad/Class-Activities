@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "S1l3nus!13",
+    "database": "blogger",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "S1l3nus!13",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "S1l3nus!13",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

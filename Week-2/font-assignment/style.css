@@ -1,0 +1,23 @@
+body {
+    font-family: Cinzel, cursive;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+
+a:hover {
+    background-color: orange;
+}
+
+a:default {
+    background-color: red;
+}
+
+a:focus {
+    background-color: blueviolet;
+}
+
+a:active {
+    background-color: black;
+}

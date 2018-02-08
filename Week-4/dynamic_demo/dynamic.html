@@ -1,0 +1,33 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Issues</title>
+
+  <!-- Added link to the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+  <div id="origDiv"></div>
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+
+      $("#click-me").on("click", function() {
+
+        // ... we trigger an alert.
+        alert("I've been clicked!");
+      });
+      
+      var newH1 = $("<h1>")
+      newH1.attr("id", "click-me")
+      newH1.html("Click me!")
+      $("#origDiv").append(newH1)
+      
+    });
+
+</script>
+
+</body>
+</html>

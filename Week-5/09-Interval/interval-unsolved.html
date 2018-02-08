@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+  </head>
+
+  <body>
+
+    <div id="show-number"></div>
+
+    <br>
+
+    <button id="stop">Stop</button>
+    <button id="resume">Resume</button>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript">
+
+    var number = 100;
+      //set to 100 (what we start counting down from)
+
+    var intervalId;
+      //creating our interval global variable
+
+    $("#stop").on("click", stop);
+      //adding the stop function to the stop button, running stop when button clicked
+
+    $("#resume").on("click", run);
+      //adding the run fuction to the resume button, running run function when clicked
+
+    function run() {
+      intervalId = setInterval(decrement, 1000);
+    } // sets a function called run to set an interval to decrease every second(1000 milliseconds)
+
+    function decrement() {
+
+      number--;
+      //sets a function called decrement that decrements the number variable by 1 each time the decrement function is called
+      $("#show-number").html("<h2>" + number + "</h2>");
+      //dumps the decrementing variable into the show-number div
+      if (number === 0) {
+
+        stop();  //naturally stops if the number hits 0
+
+        alert("Time Up!");
+      }
+    }
+
+    function stop() {
+
+      clearInterval(intervalId); // stops the countdown at the nearest interval
+    }
+
+    run(); //runs the function
+
+    </script>
+
+  </body>
+
+</html>

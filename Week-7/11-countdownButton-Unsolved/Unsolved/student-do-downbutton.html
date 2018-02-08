@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>CountDown Button with Firebase!</title>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+
+  </head>
+
+  <body>
+
+    <h1>Only <span id="click-value"></span> clicks to go!!</h1>
+
+    <button id="click-button">Click Me!!!!</button>
+    <button id="restart-button">Restart</button>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script src="logic.js">
+      // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyDSfh5CwNBQUkVFyXzUN825sOG40yzFAeI",
+          authDomain: "test-4f4b1.firebaseapp.com",
+          databaseURL: "https://test-4f4b1.firebaseio.com",
+          projectId: "test-4f4b1",
+          storageBucket: "test-4f4b1.appspot.com",
+          messagingSenderId: "119503455197"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+  </body>
+
+</html>

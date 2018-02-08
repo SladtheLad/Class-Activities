@@ -1,0 +1,15 @@
+{
+  "name": "07-browser-automation",
+  "version": "1.0.0",
+  "description": "* Folder: `07-Browser-Automation`",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "nightmare": "^2.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

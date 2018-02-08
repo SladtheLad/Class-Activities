@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Data Management</title>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Droid Sans', sans-serif;
+        }
+
+        .jumbotron {
+            background-color: #337ab7;
+            color: white;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron text-center">
+
+            <span class="headingText">
+                <h1 class="text-center">Employee Data Management</h1>
+                <h2>A Comprehensive Directory of Employee Billable Hours</h2>
+            </span>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="panel panel-primary">
+
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Employee List</h3>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <table class="table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Employee Names</th>
+                                    <th>Role</th>
+                                    <th>Date Started</th>
+                                    <th>Monthly Income</th>
+                                    <th>Months Worked</th>
+                                    <th>Total Billed</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="panel panel-primary">
+
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add Employee</h3>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <div class="form-group">
+
+                            <label for="usr">Employee Name</label>
+
+                            <input type="text" class="form-control" id="employeeName-input">
+
+                            <label for="usr">Role</label>
+
+                            <input type="text" class="form-control" id="role-input">
+
+                            <label for="usr">Date Started</label>
+
+                            <input type="date" class="form-control" id="dateStart-input">
+
+                            <label for="usr">Monthly Income</label>
+
+                            <input type="number" class="form-control" id="monthlyIncome-input">
+
+                            <label for="usr">Months Worked</label>
+
+                            <input type="number" class="form-control" id="monthsWorked-input">
+
+                            <label for="usr">Total Billed</label>
+
+                            <input type="number" class="form-control" id="totalBilled-input">
+
+                            <button type="submit" id="add-train" class="btn btn-primary">Submit</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="logic.js"></script>
+
+</body>
+
+</html>
