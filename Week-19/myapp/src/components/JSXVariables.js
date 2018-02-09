@@ -1,6 +1,6 @@
 import React from "react";
 
-const name = "Ahmed";
+const name = "Nick";
 const num1 = 1;
 const num2 = 2;
 
@@ -10,7 +10,7 @@ const JSXVariables = () => (
       <div className="jumbotron">
         {/* JavaScript expressions can be escaped inside of curly braces */}
 
-        <h2>My name is {"Nick"}. But you can call me...</h2>
+        <h2>My name is {name}. But you can call me...</h2>
         <h1>The JSX Boss!</h1>
         <hr />
         <h2>I can do math: {num1 + num2}.</h2>
