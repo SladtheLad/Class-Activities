@@ -6,32 +6,33 @@ class Counter extends React.Component {
   };
 
   handleDecrement = () => {
-    this.setState({ count: this.state.count - 1});
+    this.setState({ count: this.state.count - 1 });
   }
   handleIncrement = () => {
     this.setState({ count: this.state.count + 1 });
+  }
+  handleMultiply = () => {
+    this.setState({ count: this.state.count * 5 });
   }
 
   render() {
     return (
       <div className="panel panel-primary">
-        <div className="panel-heading">Click Up!</div>
+        <div className="panel-heading">Click Count!</div>
         <div className="panel-body text-center">
           <p>Click Count: {this.state.count}</p>
           <button className="btn btn-primary" onClick={this.handleIncrement}>
             Increment
           </button>
-        </div>
-      </div>
-      <div className="panel panel-primary">
-        <div className="panel-heading">Click Down!</div>
-        <div className="panel-body text-center">
-          <p>Click Count: {this.state.count}</p>
           <button className="btn btn-primary" onClick={this.handleDecrement}>
-            Increment
+            Decrement
+          </button>
+          <button className="btn btn-primary" onClick={this.handleMultiply}>
+            Multiply by 5!
           </button>
         </div>
       </div>
+
     );
   }
 }

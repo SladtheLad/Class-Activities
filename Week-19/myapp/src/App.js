@@ -1,6 +1,6 @@
 import React from "react";
-import JSXVariables from "./components/JSXVariables";
+import Form from "./components/Form";
 
-const App = () => <JSXVariables />;
+const App = () => <Form />;
 
 export default App;
