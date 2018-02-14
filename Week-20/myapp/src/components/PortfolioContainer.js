@@ -15,9 +15,6 @@ class PortfolioContainer extends Component {
   };
 
   render() {
-
-
-
     return (
       <div>
         <Navpills
