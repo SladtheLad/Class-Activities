@@ -16,6 +16,7 @@ class Form extends Component {
     this.setState({
       [name]: value
     });
+
   };
 
   handleFormSubmit = event => {
