@@ -33,3 +33,20 @@
 // response, but don't worry about doing anything with it yet!
 // ***************************************************************************
 // ...Your Code Here...
+
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        Console.Write("Please enter your name. ");
+        string name = System.Console.ReadLine();
+
+        Console.WriteLine("Your name is " + name + ".");
+
+    }
+
+}
